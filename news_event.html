@@ -1,122 +1,186 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FML - Tin Tức & Sự Kiện</title>
+    <title>FML-Tin tức & Sự kiện</title>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/news.css">
 </head>
 <body>
-    <header>
-        <div class="logo-box">
-            <a href="index_vi.html">
-                <span class="fml-text">FML</span>
-                <div class="logo-subtext">
-                    <span class="family-text">FAMILY</span>
-                    <span class="formosa-text">FORMOSA</span>
-                </div>
-            </a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index_vi.html">TRANG CHỦ</a></li>
-                <li><a href="about_us_vi.html">VỀ CHÚNG TÔI</a></li>
-                <li><a href="guide_book_vi.html">CẨM NANG</a></li>
-                <li><a href="news_event_vi.html">TIN TỨC & SỰ KIỆN</a></li>
-                <li><a href="contact_vi.html">LIÊN HỆ</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <a href="news_event.html">EN</a> | 
-                <a href="news_event_vi.html" class="active" style="color:#e62129; font-weight:bold;">VI</a>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <span class="fml-text">FML</span>
+            <div class="logo-subtext">
+                <span class="family-text">GIA ĐÌNH</span>
+                <span class="formosa-text">FORMOSA</span>
             </div>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Tìm kiếm...">
-            <button id="search-btn">Tìm</button>
-        </div>
-    </header>
+        </a>
+    </div>
 
-    <main>
-        <div class="news-header">
-            <h1>Tin tức Mới nhất & Sự kiện Sắp tới</h1>
-            <p>Luôn kết nối với cộng đồng người Việt. Tham gia các lễ hội, buổi hội thảo và các buổi giao lưu của chúng tôi.</p>
-        </div>
-
-        <ul class="filter-tabs">
-            <li><a href="#" class="active">Tất cả</a></li>
-            <li><a href="#">Lễ hội</a></li>
-            <li><a href="#">Hội thảo</a></li>
-            <li><a href="#">Hội chợ việc làm</a></li>
-            <li><a href="#">Thông báo</a></li>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="about_us.html">GIỚI THIỆU</a></li>
+            <li><a href="guide_book.html">CẨM NANG</a></li>
+            <li><a href="news_event.html">TIN TỨC & SỰ KIỆN</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
         </ul>
+    </nav>
 
-        <div class="events-container">
-            <div class="events-grid">
-                
-                <div class="news-list-item">
-                    <div class="news-list-img">
-                        <div class="img-placeholder">Hình ảnh Sự kiện</div>
-                    </div>
-                    <div class="news-list-text">
-                        <h3>Hội ngộ Tết Trung Thu 2026</h3>
-                        <p class="event-meta">Ngày: 25 tháng 9, 2026 | Địa điểm: Ga chính Đài Bắc (Taipei Main Station)</p>
-                        <p>Cùng tham gia đêm hội thưởng thức bánh trung thu truyền thống, làm lồng đèn và các tiết mục biểu diễn âm nhạc.</p>
-                        <a href="#" class="read-more">Xem thêm →</a>
-                    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button id="search-btn">Tìm</button>
+    </div>
+</header>
+
+<main>
+
+<section class="news-header">
+    <div class="badge-outline">Khám phá & Kết nối</div>
+    <h1>Tin tức & Sự kiện</h1>
+    <p>Cập nhật các hoạt động cộng đồng, lễ hội văn hóa và cơ hội việc làm mới nhất dành cho người Việt tại Đài Loan.</p>
+    
+    <ul class="filter-tabs">
+        <li class="active-tab"><a href="#">Tất cả</a></li>
+        <li><a href="#">Lễ hội</a></li>
+        <li><a href="#">Hội thảo</a></li>
+        <li><a href="#">Du lịch</a></li>
+        <li><a href="#">Việc làm</a></li>
+    </ul>
+</section>
+
+<section class="highlighted-events">
+    <div class="events-grid">
+        
+        <div class="event-card">
+            <div class="card-img">
+                <span class="tag tag-red">Sắp diễn ra</span>
+            </div>
+
+            <div class="card-body">
+                <div class="event-meta">📅 15 Tháng 10, 2026 📍 Đài Bắc</div>
+                <h3>Lễ Vu Lan tại chùa Long Sơn</h3>
+                <p>Một sự kiện ý nghĩa dành cho cộng đồng người Việt để nhớ về cội nguồn với các nghi lễ truyền thống.</p>
+
+                <div class="card-footer">
+                    <span class="price">Miễn phí</span>
+                    <button class="btn btn-red-outline">Đăng ký ngay</button>
                 </div>
-
-                <div class="news-list-item">
-                    <div class="news-list-img">
-                        <div class="img-placeholder">Hình ảnh Sự kiện</div>
-                    </div>
-                    <div class="news-list-text">
-                        <h3>Hội thảo Công nghệ: Sự nghiệp IT tại Đài Loan</h3>
-                        <p class="event-meta">Ngày: 10 tháng 10, 2026 | Địa điểm: Trực tuyến (Zoom)</p>
-                        <p>Các diễn giả khách mời từ các công ty công nghệ hàng đầu sẽ chia sẻ hành trình và bí quyết tìm việc.</p>
-                        <a href="#" class="read-more">Xem thêm →</a>
-                    </div>
-                </div>
-
-                <div class="news-list-item">
-                    <div class="news-list-img">
-                        <div class="img-placeholder">Hình ảnh Sự kiện</div>
-                    </div>
-                    <div class="news-list-text">
-                        <h3>Hội thảo Hỗ trợ Pháp lý cho Người lao động</h3>
-                        <p class="event-meta">Ngày: 20 tháng 10, 2026 | Địa điểm: Đài Trung</p>
-                        <p>Tư vấn miễn phí về quyền lợi lao động, hợp đồng và thủ tục chuyển đổi người sử dụng lao động.</p>
-                        <a href="#" class="read-more">Xem thêm →</a>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </main>
 
-    <footer>
-        <div class="footer-col">
-            <h3>FML Formosa</h3>
-            <p>Nơi kết nối hàng ngàn người Việt tại Đài Loan. &copy; <span id="current-year"></span></p>
-            <div class="footer-credit" style="font-size: 13px; color: #888; margin-top: 15px;">
-                Hình ảnh: [Tên bạn của bạn]. Chụp tại Đài Nam.
+        <div class="event-card">
+            <div class="card-img">
+                <span class="tag tag-blue">Du lịch</span>
+            </div>
+
+            <div class="card-body">
+                <div class="event-meta">📅 20 Tháng 10, 2026 📍 A Lý Sơn</div>
+                <h3>Tour săn mây A Lý Sơn 2 ngày</h3>
+                <p>Khám phá vẻ đẹp huyền bí của rừng cổ A Lý Sơn và thưởng thức trà núi nổi tiếng.</p>
+
+                <div class="card-footer">
+                    <span class="price">2,500 TWD</span>
+                    <button class="btn btn-red-outline">Xem lịch trình</button>
+                </div>
             </div>
         </div>
-        <div class="footer-col">
-            <h3>Thông tin</h3>
-            <ul>
-                <li><a href="about_us_vi.html">Về chúng tôi</a></li>
-                <li><a href="#">Điều khoản sử dụng</a></li>
-            </ul>
+
+        <div class="event-card">
+            <div class="card-img">
+                <span class="tag tag-yellow">Hội thảo</span>
+            </div>
+
+            <div class="card-body">
+                <div class="event-meta">📅 25 Tháng 10, 2026 📍 Trực tuyến (Zoom)</div>
+                <h3>Viết CV & Kỹ năng phỏng vấn cho công ty công nghệ</h3>
+                <p>Buổi chia sẻ từ các chuyên gia HR người Việt đang làm việc tại các tập đoàn lớn như TSMC và ASUS.</p>
+
+                <div class="card-footer">
+                    <span class="price">Miễn phí</span>
+                    <button class="btn btn-red-outline">Tham gia ngay</button>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-            <h3>Cộng đồng</h3>
-            <ul>
-                <li><a href="#">Diễn đàn</a></li>
-                <li><a href="#">Nhóm Facebook</a></li>
-            </ul>
+
+    </div>
+</section>
+
+<section class="community-news">
+    <div class="section-title">
+        <span class="badge-outline">Tin tức cộng đồng</span>
+    </div>
+    
+    <div class="news-list">
+
+        <div class="news-list-item">
+            <div class="news-list-img">Image</div>
+            <div class="news-list-text">
+                <span class="category-text">CHÍNH SÁCH MỚI</span>
+                <h3>Cập nhật Bảo hiểm Y tế Quốc gia (NHI) cho lao động nước ngoài năm 2026</h3>
+                <p>Những thay đổi quan trọng về mức phí và quyền lợi mà người Việt sống tại Đài Loan nên biết.</p>
+                <span class="news-meta">2 giờ trước • 1.2k lượt xem</span>
+            </div>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+        <div class="news-list-item">
+            <div class="news-list-img">Image</div>
+            <div class="news-list-text">
+                <span class="category-text">TIN ĐỊA PHƯƠNG</span>
+                <h3>Lễ hội ẩm thực Việt Nam tại Đài Nam cuối tuần này</h3>
+                <p>Hơn 20 gian hàng ẩm thực tụ họp tại công viên Đài Nam để tôn vinh văn hóa Việt.</p>
+                <span class="news-meta">5 giờ trước • 850 lượt xem</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="newsletter-section">
+    <div class="newsletter-box">
+        <div class="newsletter-text">
+            <h2>Đừng bỏ lỡ bất kỳ sự kiện nào!</h2>
+            <p>Đăng ký nhận bản tin hằng tuần để cập nhật các hoạt động cộng đồng và tin tức quan trọng trực tiếp qua email.</p>
+        </div>
+
+        <div class="newsletter-form">
+            <input type="email" placeholder="Địa chỉ email của bạn">
+            <button class="btn btn-black">Đăng ký</button>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-col">
+        <h3>FML Formosa</h3>
+        <p>Nơi kết nối hàng nghìn người Việt tại Đài Loan. &copy; <span id="current-year"></span></p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Thông tin</h3>
+        <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Cộng đồng</h3>
+        <ul>
+            <li><a href="#">Diễn đàn</a></li>
+            <li><a href="#">Nhóm Facebook</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
+```
