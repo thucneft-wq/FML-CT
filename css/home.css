@@ -1,0 +1,305 @@
+/* =========================================
+   FILE: home.css (BÁM SÁT THIẾT KẾ MỚI NHẤT)
+========================================= */
+
+/* ======== KHỐI 1: HERO BANNER ======== */
+.hero-section {
+    /* Đổ một lớp mờ màu đen (0.7) đè lên ảnh nền để làm nổi bật chữ trắng */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1552993873-0aa1ddbfeb00?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Cao bằng 80% màn hình */
+    display: flex;
+    align-items: center; /* Đẩy nội dung ra giữa theo chiều dọc */
+    padding: 0 10%; /* Lùi vào một chút cho đẹp */
+}
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text-yellow {
+    color: #FFD700; /* Màu vàng giống bản thiết kế */
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Nút bấm ở Hero */
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-red {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+}
+.btn-red:hover { background-color: #c00f18; }
+
+.btn-transparent {
+    background-color: rgba(255, 255, 255, 0.2); /* Nền trong suốt 20% */
+    color: white;
+    border: 1px solid white;
+}
+.btn-transparent:hover { background-color: white; color: black; }
+
+
+/* ======== KHỐI 2: LIÊN KẾT NHANH ======== */
+.quick-links {
+    background-color: var(--bg-light); /* Nền xám nhạt */
+    padding: 80px 10%;
+}
+
+.section-title { margin-bottom: 40px; }
+
+.section-title h2 {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Cái gạch ngang màu đỏ tinh tế cạnh tiêu đề */
+.red-line {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: var(--primary-red);
+    margin-right: 15px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Dàn ngang 3 thẻ bằng CSS Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Bóng mờ xịn xò */
+    transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Nền hình vuông màu hồng nhạt chứa icon */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #fce7e8; /* Hồng nhạt */
+    color: var(--primary-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card h3 { margin-bottom: 15px; font-size: 20px; }
+.card p { color: #555; margin-bottom: 30px; font-size: 14px; line-height: 1.6; }
+
+.card-link {
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* ======== KHỐI 3: THỐNG KÊ ======== */
+.stats-section {
+    background-color: #fce7e8; /* Nền màu hồng nhạt toàn dải giống hình */
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: var(--primary-red);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Container chính chia 2 cột */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #ffffff; /* Nền trắng sạch sẽ */
+    gap: 50px;
+}
+
+/* Cột chữ bên trái */
+.hero-text {
+    flex: 1; /* Chiếm 50% độ rộng */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text-yellow-dark {
+    color: #d4a017; /* Màu vàng đậm để nổi bật trên nền trắng */
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Cột ảnh bên phải */
+.hero-image {
+    flex: 1; /* Chiếm 50% độ rộng */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* Giữ ảnh không bị méo */
+    border-radius: 20px; /* Bo góc tròn cho hiện đại */
+    box-shadow: 20px 20px 0px #fce7e8; /* Thêm một lớp nền hồng trang trí phía sau (tùy chọn) */
+}
+
+/* Nút bấm điều chỉnh lại cho nền trắng */
+.btn-outline {
+    border: 1px solid #333;
+    color: #333;
+    background: transparent;
+}
+.btn-outline:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* =========================================
+   RESPONSIVE: DÀNH CHO ĐIỆN THOẠI (Dưới 768px)
+========================================= */
+/* =========================================
+   SIÊU TINH CHỈNH CHO HOMEPAGE TRÊN ĐIỆN THOẠI
+========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Phần Hero: Đưa chữ lên trên ảnh, căn giữa hoàn toàn */
+    .hero-container {
+        flex-direction: column-reverse; /* Đưa khối chữ lên trên cho người ta đọc trước */
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+        background-color: #fff;
+    }
+
+    .hero-text h1 {
+        font-size: 28px; /* Giảm cỡ chữ để không bị vỡ dòng quá nhiều */
+        line-height: 1.3;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .hero-btns {
+        justify-content: center; /* Nút ra giữa */
+        flex-direction: column; /* Nút xếp chồng lên nhau cho dễ bấm */
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%; /* Nút bấm rộng hết cỡ cho dễ chạm ngón tay */
+    }
+
+    /* 2. Ảnh Hero: Bo góc và thu nhỏ lại */
+    .hero-image {
+        width: 100%;
+    }
+    .hero-image img {
+        height: 250px; /* Không để quá cao làm loãng trang */
+        border-radius: 15px;
+        box-shadow: 10px 10px 0px #fce7e8; /* Giữ lại hiệu ứng bóng hồng */
+    }
+
+    /* 3. Phần Quick Links: Thẻ bài viết cần thoáng hơn */
+    .quick-links {
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column; /* Quan trọng: Xếp dọc các thẻ */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .icon-box {
+        margin: 0 auto 15px auto; /* Đưa icon ra giữa */
+    }
+
+    /* 4. Phần Stats: Chia 2 cột 2 hàng cho gọn */
+    .stats-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 cột mỗi hàng */
+        gap: 30px 10px;
+        padding: 40px 10px;
+        background-color: #fce7e8;
+    }
+
+    .stat-box h2 {
+        font-size: 24px; /* Thu nhỏ con số */
+    }
+
+    .stat-box p {
+        font-size: 10px;
+    }
+}   

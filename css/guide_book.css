@@ -1,0 +1,126 @@
+/* =========================================
+   FILE: guide.css
+========================================= */
+.page-header { text-align: center; padding: 60px 50px 20px 50px; }
+.page-header h1 { font-size: 32px; margin-bottom: 15px; color: var(--primary-red); }
+
+.filter-section { padding: 0 50px 40px 50px; }
+.filter-tabs { display: flex; justify-content: center; gap: 15px; }
+.filter-tabs li a { display: inline-block; padding: 8px 25px; border: 1px solid #ccc; border-radius: 20px; font-size: 14px; }
+.filter-tabs .active-tab a { background-color: var(--primary-red); color: white; border-color: var(--primary-red); }
+
+.guide-content { padding: 20px 50px 80px 50px; }
+.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.guide-card {
+    border: 1px solid var(--border-light); border-radius: 10px; overflow: hidden;
+    background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.04); display: flex; flex-direction: column;
+    transition: 0.3s;
+}
+.guide-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+/* Tìm class .card-img (cái hộp chứa ảnh) */
+.card-img {
+    width: 100%;
+    height: 200px;         /* Chiều cao cố định cho tất cả các card */
+    overflow: hidden;      /* Để ảnh không tràn ra ngoài góc bo */
+    padding: 0;            /* Đảm bảo KHÔNG có padding gây lệch ảnh */
+    margin: 0;
+    display: block;        /* Để nó chiếm hết chiều ngang */
+}
+
+/* Tìm class ảnh bên trong (thẻ img) */
+.card-img img {
+    width: 100% !important; /* Ép ảnh rộng 100% để không hụt bên trái */
+    height: 100% !important;/* Ép ảnh cao 100% */
+    display: block;         /* Xóa bỏ các khoảng cách mặc định của trình duyệt */
+    object-fit: cover;      /* Giúp ảnh lấp đầy khung mà không bị méo */
+    object-position: center;/* Lấy tâm ảnh làm chuẩn */
+}
+.card-text { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+.card-text h3 { font-size: 18px; margin-bottom: 10px; line-height: 1.4; }
+.card-text p { font-size: 14px; margin-bottom: 20px; color: #555; flex-grow: 1; }
+.read-more { font-weight: bold; color: var(--primary-red); font-size: 13px; }
+/* Container của từng cái Card */
+.guide-card {
+    display: flex;
+    flex-direction: column; /* Xếp ảnh trên, chữ dưới */
+    border-radius: 15px;
+    overflow: hidden; /* QUAN TRỌNG: Để ảnh không bị thò ra ngoài góc bo tròn */
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%; /* Giúp các card cao bằng nhau */
+}
+
+/* Khối chứa ảnh */
+.card-img {
+    width: 100%;
+    height: 200px; /* Cố định chiều cao phần ảnh */
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* QUAN TRỌNG: Để ảnh tự co giãn mà không bị méo */
+}
+
+@media (max-width: 768px) {
+    /* 1. Header trang: Thu nhỏ để dành chỗ cho nội dung */
+    .page-header {
+        padding: 40px 20px;
+        height: auto !important;
+    }
+    .page-header h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    /* 2. Bộ lọc: Tránh bị tràn màn hình ngang */
+    .filter-tabs {
+        display: flex;
+        flex-wrap: wrap; /* Tự động xuống dòng nếu quá nhiều nút */
+        justify-content: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .filter-tabs li a {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    /* 3. Container chứa các Card: Quan trọng nhất */
+    .guide-content {
+        padding: 20px 10px;
+    }
+    .guide-grid {
+        display: flex; /* Chuyển sang Flex để dễ kiểm soát chiều dọc */
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* 4. Thẻ bài viết (Card): Fix lỗi mất chữ */
+    .guide-card {
+        width: 100% !important;
+        height: auto !important; /* Tuyệt đối không để số px ở đây */
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        overflow: visible !important; /* Đảm bảo chữ thò ra ngoài là thấy liền */
+    }
+
+    .card-img {
+        height: 180px; /* Cố định chiều cao ảnh */
+        width: 100%;
+    }
+
+    .card-text {
+        padding: 20px;
+        height: auto !important; /* Cho phép khung chứa chữ tự dài ra */
+    }
+
+    .card-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        white-space: normal; /* Đảm bảo chữ tự xuống dòng khi hết hàng */
+    }
+}
