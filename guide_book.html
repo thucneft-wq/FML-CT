@@ -1,138 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FML-Guide Book</title>
-    
+    <title>FML - Cẩm Nang</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/guide_book.css">
+    <link rel="stylesheet" href="css/guide.css">
 </head>
 <body>
-
     <header>
         <div class="logo-box">
-            <a href="index.html">
+            <a href="index_vi.html">
                 <span class="fml-text">FML</span>
                 <div class="logo-subtext">
                     <span class="family-text">FAMILY</span>
                     <span class="formosa-text">FORMOSA</span>
+                </div>
+            </a>
         </div>
-    </a>
-</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about_us.html">ABOUT US</a></li>
-                <li><a href="guide_book.html">GUIDE BOOK</a></li>
-                <li><a href="news_event.html">News & Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index_vi.html">TRANG CHỦ</a></li>
+                <li><a href="about_us_vi.html">VỀ CHÚNG TÔI</a></li>
+                <li><a href="guide_book_vi.html">CẨM NANG</a></li>
+                <li><a href="news_event_vi.html">TIN TỨC & SỰ KIỆN</a></li>
+                <li><a href="contact_vi.html">LIÊN HỆ</a></li>
             </ul>
+            <div class="lang-switcher">
+                <a href="guide_book.html">EN</a> | 
+                <a href="guide_book_vi.html" class="active" style="color:#e62129; font-weight:bold;">VI</a>
+            </div>
         </nav>
         <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button id="search-btn">Search</button>
+            <input type="text" placeholder="Tìm kiếm...">
+            <button id="search-btn">Tìm</button>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
-            <h1>Guide to Settling Down & Living in Taiwan</h1>
-            <p>Everything you need to know from the moment you step foot on the island: procedures, housing, daily life, and more.</p>
-        </section>
+        <div class="page-header">
+            <h1>Cẩm nang Định cư & Sinh sống tại Đài Loan</h1>
+            <p>Tất cả những gì bạn cần biết từ khi đặt chân đến hòn đảo này: thủ tục, nhà ở, đời sống thường ngày và hơn thế nữa.</p>
+        </div>
 
-        <section class="filter-section">
-            <ul class="filter-tabs">
-                <li class="active-tab"><a href="#">All</a></li>
-                <li><a href="#">ARC & Visa</a></li>
-                <li><a href="#">Housing</a></li>
-                <li><a href="#">Bank</a></li>
-                <li><a href="#">Healthcare</a></li>
-            </ul>
-        </section>
+        <ul class="filter-tabs">
+            <li><a href="#" class="active">Tất cả</a></li>
+            <li><a href="#">ARC & Visa</a></li>
+            <li><a href="#">Nhà ở</a></li>
+            <li><a href="#">Ngân hàng</a></li>
+            <li><a href="#">Y tế</a></li>
+        </ul>
 
-        <section class="guide-content">
+        <div class="guide-content">
             <div class="guide-grid">
-                
                 <div class="guide-card">
-                    <div class="card-img"><img src="images/airport.jpg" alt= "new members Tainan" style="width:100%; border-radius:20px; border: 1px solid #ccc;"></div>
+                    <div class="card-img">
+                        <img src="images/arc.jpg" alt="Đăng ký ARC">
+                    </div>
                     <div class="card-text">
-                        <h3>How to apply for an ARC (Alien Resident Certificate)</h3>
-                        <p>A step-by-step guide for international students and workers to get their ID card in Taiwan.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <h3>Cách đăng ký thẻ cư trú (ARC)</h3>
+                        <p>Hướng dẫn từng bước cho du học sinh và người lao động để lấy thẻ ARC tại Đài Loan.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
                     </div>
                 </div>
 
                 <div class="guide-card">
-                    <div class="card-img">Image </div>
+                    <div class="card-img">
+                        <div class="img-placeholder">Hình ảnh</div>
+                    </div>
                     <div class="card-text">
-                        <h3>Opening a bank account as a foreigner</h3>
-                        <p>Required documents and the best banks that offer English support for expats.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <h3>Mở tài khoản ngân hàng cho người nước ngoài</h3>
+                        <p>Các giấy tờ cần thiết và những ngân hàng hỗ trợ tiếng Anh tốt nhất cho người nước ngoài.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
                     </div>
                 </div>
 
                 <div class="guide-card">
-                    <div class="card-img">Image</div>
+                    <div class="card-img">
+                        <div class="img-placeholder">Hình ảnh</div>
+                    </div>
                     <div class="card-text">
-                        <h3>Understanding Taiwan's National Health Insurance (NHI)</h3>
-                        <p>How to enroll, what it covers, and why it's considered one of the best in the world.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <h3>Tìm hiểu về Bảo hiểm Y tế Toàn dân (NHI)</h3>
+                        <p>Cách tham gia, quyền lợi bảo hiểm và lý do NHI được coi là một trong những hệ thống tốt nhất thế giới.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
                     </div>
                 </div>
 
                 <div class="guide-card">
-                    <div class="card-img">Image</div>
-                    <div class="card-text">
-                        <h3>Renting an apartment: Tips and Scams to avoid</h3>
-                        <p>Where to find housing, how to deal with landlords, and understanding lease contracts.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                    <div class="card-img">
+                        <div class="img-placeholder">Hình ảnh</div>
                     </div>
-                </div>
-                
-                <div class="guide-card">
-                    <div class="card-img">Image</div>
                     <div class="card-text">
-                        <h3>Garbage disposal rules in Taiwan</h3>
-                        <p>Don't just throw it away! Learn the strict sorting rules and listen for the garbage truck melody.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <h3>Thuê nhà: Mẹo hay và những chiêu trò lừa đảo cần tránh</h3>
+                        <p>Những điều cần lưu ý trong hợp đồng thuê nhà và cách thương lượng với chủ nhà.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
                     </div>
                 </div>
 
                 <div class="guide-card">
-                    <div class="card-img">Image</div>
+                    <div class="card-img">
+                        <div class="img-placeholder">Hình ảnh</div>
+                    </div>
                     <div class="card-text">
-                        <h3>Getting around: EasyCard and Public Transport</h3>
-                        <p>Mastering the MRT, buses, and YouBike systems using just one convenient card.</p>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <h3>Quy định vứt rác tại Đài Loan</h3>
+                        <p>Đài Loan có một hệ thống xử lý rác độc đáo. Tìm hiểu cách phân loại rác và canh giờ xe rác.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
                     </div>
                 </div>
 
+                <div class="guide-card">
+                    <div class="card-img">
+                        <div class="img-placeholder">Hình ảnh</div>
+                    </div>
+                    <div class="card-text">
+                        <h3>Di chuyển: Thẻ EasyCard và Phương tiện công cộng</h3>
+                        <p>Cách sử dụng xe buýt, tàu điện ngầm (MRT) và xe đạp YouBike hiệu quả tại các thành phố lớn.</p>
+                        <a href="#" class="read-more">Xem thêm →</a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         <div class="footer-col">
             <h3>FML Formosa</h3>
-            <p>A place connecting thousands of Vietnamese people in Taiwan. &copy; <span id="current-year"></span></p>
+            <p>Nơi kết nối hàng ngàn người Việt tại Đài Loan. &copy; <span id="current-year"></span></p>
+            <div class="footer-credit" style="font-size: 13px; color: #888; margin-top: 15px;">
+                Hình ảnh: [Tên bạn của bạn]. Chụp tại Đài Nam.
+            </div>
         </div>
         <div class="footer-col">
-            <h3>Information</h3>
+            <h3>Thông tin</h3>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a href="about_us_vi.html">Về chúng tôi</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h3>Community</h3>
+            <h3>Cộng đồng</h3>
             <ul>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Facebook group</a></li>
+                <li><a href="#">Diễn đàn</a></li>
+                <li><a href="#">Nhóm Facebook</a></li>
             </ul>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>
