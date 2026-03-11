@@ -1,114 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FML-Contact</title>
-    
+    <title>FML - Liên Hệ</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-
     <header>
         <div class="logo-box">
-            <a href="index.html">
+            <a href="index_vi.html">
                 <span class="fml-text">FML</span>
                 <div class="logo-subtext">
                     <span class="family-text">FAMILY</span>
                     <span class="formosa-text">FORMOSA</span>
+                </div>
+            </a>
         </div>
-    </a>
-</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about_us.html">ABOUT US</a></li>
-                <li><a href="guide_book.html">GUIDE BOOK</a></li>
-                <li><a href="news_event.html">News & Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index_vi.html">TRANG CHỦ</a></li>
+                <li><a href="about_us_vi.html">VỀ CHÚNG TÔI</a></li>
+                <li><a href="guide_book_vi.html">CẨM NANG</a></li>
+                <li><a href="news_event_vi.html">TIN TỨC & SỰ KIỆN</a></li>
+                <li><a href="contact_vi.html">LIÊN HỆ</a></li>
             </ul>
+            <div class="lang-switcher">
+                <a href="contact.html">EN</a> | 
+                <a href="contact_vi.html" class="active" style="color:#e62129; font-weight:bold;">VI</a>
+            </div>
         </nav>
         <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button id="search-btn">Search</button>
+            <input type="text" placeholder="Tìm kiếm...">
+            <button id="search-btn">Tìm</button>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
-            <h1>Contact Us</h1>
-            <p>We are always open to discuss your questions, suggestions, or any support you might need.</p>
-        </section>
+        <div class="page-header">
+            <h1>Liên Hệ Với Chúng Tôi</h1>
+            <p>Bạn có câu hỏi, cần hỗ trợ hay muốn hợp tác? Chúng tôi luôn sẵn sàng lắng nghe.</p>
+        </div>
 
-        <section class="contact-section">
-            <div class="contact-container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Trụ sở chính</h3>
+                    <p>Số 1, Đoạn 4, Đường Roosevelt,<br>Quận Đại An, TP. Đài Bắc</p>
+                </div>
                 
-                <div class="contact-info">
-                    <h3>Project Information</h3>
-                    <div class="info-box">📍 Taipei 101, No. 7, Section 5, Xinyi Rd</div>
-                    <div class="info-box">📞 +886 123 456 789</div>
-                    <div class="info-box">✉️ contact@vn-tw.org</div>
-                    <div class="info-box">🕒 Mon - Fri, 9:00 AM - 6:00 PM</div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>contact@fmlformosa.org</p>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form id="contact-form">
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="userName">Name</label>
-                                <input type="text" id="userName" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="userEmail">Email</label>
-                                <input type="email" id="userEmail" placeholder="Your email" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userMessage">Message</label>
-                            <textarea id="userMessage" rows="6" placeholder="Write your message here..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-black">Send Message</button>
-                    </form>
+                <div class="info-item">
+                    <h3>Điện thoại</h3>
+                    <p>+886 2 1234 5678<br>(Thứ 2 - Thứ 6, 9:00 - 18:00)</p>
                 </div>
 
+                <div class="social-connect">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="connect-boxes">
+                        <div class="connect-box">
+                            <span class="icon">FB</span>
+                            <div>
+                                <h4>Nhóm Facebook</h4>
+                                <p>Tham gia cộng đồng hơn 50,000 thành viên.</p>
+                            </div>
+                        </div>
+                        <div class="connect-box">
+                            <span class="icon">ZA</span>
+                            <div>
+                                <h4>Zalo Official</h4>
+                                <p>Nhận hỗ trợ trực tiếp từ ban quản trị.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section class="connect-section">
-            <h3>Connect With Us</h3>
-            <div class="connect-boxes">
-                <div class="connect-box">Facebook Community</div>
-                <div class="connect-box">Zalo Support Group</div>
+            <div class="contact-form-wrapper">
+                <h2>Gửi tin nhắn cho chúng tôi</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="fname">Tên</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="lname">Họ</label>
+                            <input type="text" id="lname" name="lname" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Địa chỉ Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Chủ đề</label>
+                        <select id="subject" name="subject">
+                            <option value="general">Câu hỏi chung</option>
+                            <option value="support">Cần hỗ trợ</option>
+                            <option value="partnership">Hợp tác</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Tin nhắn của bạn</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Viết tin nhắn của bạn tại đây..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Gửi tin nhắn</button>
+                </form>
             </div>
-        </section>
-
+        </div>
     </main>
 
     <footer>
         <div class="footer-col">
             <h3>FML Formosa</h3>
-            <p>A place connecting thousands of Vietnamese people in Taiwan. &copy; <span id="current-year"></span></p>
+            <p>Nơi kết nối hàng ngàn người Việt tại Đài Loan. &copy; <span id="current-year"></span></p>
+            <div class="footer-credit" style="font-size: 13px; color: #888; margin-top: 15px;">
+                Hình ảnh: [Tên bạn của bạn]. Chụp tại Đài Nam.
+            </div>
         </div>
         <div class="footer-col">
-            <h3>Information</h3>
+            <h3>Thông tin</h3>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a href="about_us_vi.html">Về chúng tôi</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h3>Community</h3>
+            <h3>Cộng đồng</h3>
             <ul>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Facebook group</a></li>
+                <li><a href="#">Diễn đàn</a></li>
+                <li><a href="#">Nhóm Facebook</a></li>
             </ul>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>
